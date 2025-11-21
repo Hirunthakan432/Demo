@@ -1,1 +1,62 @@
-
+<html>
+<style>
+body{
+  background:#002924;
+  color: #fff;
+}
+h1 {
+  font-family: monospace;
+}
+button {
+  padding: 4px;
+  border: none;
+  border-radius:20px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+  transition: 0.5s ease-in-out;
+  display: block;
+  margin-top: 10px;
+  filter: brightness(0.9)
+}
+button:hover {
+  transform: scale(1.1);
+  filter: brightness(1.4);
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Most useful website</title>
+<center>
+  <h1 id="one">
+    Hello World!
+  </h1>
+<button id="bye">
+  Change it as Bye World!
+</button>
+  <button id="revert">
+    Revert changes
+  </button>
+  <button id="show_dev">
+    Show Developer
+  </button>
+  <h3 id="dev"></h3>
+  </center>
+  <script>
+  var heading=document.getElementById("one")
+  var developer=document.getElementById("dev")
+  var btn=document.getElementById("bye")
+  btn.addEventListener('click', () =>{
+  heading.textContent="Bye World!";
+  });
+  var btn2=document.getElementById("revert")
+  btn2.addEventListener('click', () =>{
+    heading.textContent="Hello World!";
+    alert("CHANGES REVERTED!")
+  });
+   var btn3=document.getElementById("show_dev")
+   btn3.addEventListener('click', () =>{
+     alert("Developer: Hirunthakan")
+     
+   });
+  </script>
+</button>
+    </html>
